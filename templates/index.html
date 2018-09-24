@@ -1,0 +1,17 @@
+{%extends 'layout.html'%}
+
+{% block body%}
+    <form action="/" method='POST'>
+        <div>
+            <label>Rotate by:
+                <input type="text" name="rot" value=0 />
+            </label>
+        </div>
+        <br>
+        <div>
+            <textarea name="text" type="text">{{rotated}}</textarea>
+        </div>
+        <br>
+        <input type="submit" value="ROTATE ME NOW!" />
+    </form>
+{% endblock %}
